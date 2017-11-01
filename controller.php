@@ -2,7 +2,7 @@
 session_start();
 include_once('model.php');
 include_once('view.php');
-if(isset($_POST['pushit']) and isset($_POST['string'])){   //Динамическая информация введенная пользоваетлем как параметр к  model.php
+if(isset($_POST['pushit']) and isset($_POST['string'])){   
 	$dynamicstring=$_POST['string'];
 	$modelans=model($dynamicstring);
 	$kek=$_POST['string'];
